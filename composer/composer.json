@@ -1,0 +1,6 @@
+{
+    "require": {
+        "voku/portable-utf8": "^6.0",
+        "voku/simple_html_dom": "^4.8"
+    }
+}

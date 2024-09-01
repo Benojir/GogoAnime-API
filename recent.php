@@ -17,15 +17,15 @@ if(!ctype_digit($page) || !ctype_digit($type)) {
     sendErrorResponse("Invalid page number or type.");
 }
 
-$gogo_request_url = $gogo_ajax_url . "?type=" . $type . "&page=" . $page;
-
-$anime = array();
+$gogo_request_url = $gogo_ajax_url . "/page-recent-release.html?type=" . $type . "&page=" . $page;
 
 $html = getHtmlFromUrl($gogo_request_url);
 
 $dom = HtmlDomParser::str_get_html($html);
 
-$items = $dom->findOne('.items')->findMulti("li"); 
+$items = $dom->findOne('.items')->findMulti("li");
+
+$anime = array();
 
 foreach ($items as $item) {
 

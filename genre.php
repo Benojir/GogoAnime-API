@@ -17,8 +17,8 @@ if(!ctype_digit($page)) {
     sendErrorResponse("Invalid page number.");
 }
 
-if ($q == "") {
-    sendErrorResponse("Invalid query.");
+if ($genre == "") {
+    sendErrorResponse("Invalid genre.");
 }
 
 $gogo_request_url = $gogourl . "/genre/" . $genre . "?page=" . $page;

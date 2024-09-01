@@ -170,3 +170,45 @@ function sendErrorResponse($message){
     
     die();
 }
+
+// --------------------------------------------------------
+
+function extractAnime($url) {
+
+    $html = getHtmlFromUrl($url);
+
+    $dom = HtmlDomParser::str_get_html($html);
+
+    $items = $dom->findOne('.items')->findMulti("li");
+
+    $anime = array();
+
+    foreach ($items as $item) {
+
+        $anime_id = "";
+        $anime_name = "";
+        $thumbnail = "";
+        $release_date = "";
+        
+        $anime_id = trim($item->findOne("a")->getAttribute("href"));
+
+        $anime_id = str_replace("/category/", "", $anime_id);
+
+        $anime_name = $item->findOne("a")->getAttribute("title");
+
+        $thumbnail = $item->findOne("img")->getAttribute("src");
+
+        $release_date = trim(str_replace("released:", "", strtolower($item->findOne(".released")->text())));
+
+        $anime_info_array = array(
+            "animeId" => $anime_id,
+            "animeTitle" => $anime_name,
+            "animeImg" => $thumbnail,
+            "releasedDate" => $release_date,
+        );
+
+        $anime[] = $anime_info_array;
+    }
+
+    return $anime;
+}

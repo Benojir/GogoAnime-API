@@ -7,7 +7,7 @@ require_once 'config.php';
 require_once 'functions.php';
 
 if (!isset($_REQUEST['page']) || !isset($_REQUEST['genre'])) {
-    sendErrorResponse("No page number or query.");
+    sendErrorResponse("No page number or genre.");
 }
 
 $page = $_REQUEST['page'];

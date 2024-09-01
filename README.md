@@ -11,7 +11,7 @@ This is an unofficial GogoAnime API. It just scrapes GogoAnime and fetch the dat
 
 Example: `https://api.example.com/recent.php?type=1&page=2`
 
-```javascript
+```JSON
 
 [
     {
@@ -39,7 +39,7 @@ Example: `https://api.example.com/recent.php?type=1&page=2`
 
 Example: `https://api.example.com/popular.php?page=21`
 
-```javascript
+```JSON
 
 [
     {
@@ -69,7 +69,7 @@ Example: `https://api.example.com/popular.php?page=21`
 
 Example: `https://api.example.com/movies.php?page=21`
 
-```javascript
+```JSON
 
 [
     {
@@ -99,7 +99,7 @@ Example: `https://api.example.com/movies.php?page=21`
 
 Example: `https://api.example.com/new-season.php?page=21`
 
-```javascript
+```JSON
 
 [
     {
@@ -129,7 +129,7 @@ Example: `https://api.example.com/new-season.php?page=21`
 
 Example: `https://api.example.com/search.php?page=1&q=naruto`
 
-```javascript
+```json
 
 [
     {
@@ -160,7 +160,7 @@ Example: `https://api.example.com/search.php?page=1&q=naruto`
 
 Example: `https://api.example.com/genre.php?page=1&genre=action`
 
-```javascript
+```JSON
 
 [
     {
@@ -191,7 +191,7 @@ Example: `https://api.example.com/genre.php?page=1&genre=action`
 
 Example: `https://api.example.com/anime-details.php?id=kidou-senshi-gundam-seed-freedom`
 
-```javascript
+```JSON
 
 {
     "animeTitle": "Kidou Senshi Gundam SEED Freedom",
@@ -219,7 +219,7 @@ Example: `https://api.example.com/anime-details.php?id=kidou-senshi-gundam-seed-
 
 Example: `https://api.example.com/generate-link.php?id=naruto-episode-200`
 
-```javascript
+```JSON
 {
     "source": [
         {

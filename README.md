@@ -3,6 +3,9 @@
 
 This is an unofficial GogoAnime API. It just scrapes GogoAnime and fetch the data from GoggoAnime and presents as JSON format.
 
+## Installation:
+- Just clone this repository in your server's public_html directory.
+
 ## Usage:
 
 ### Get recent anime

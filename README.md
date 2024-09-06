@@ -202,7 +202,7 @@ Example: `https://api.example.com/anime-details.php?id=string`
     "genres": "string",
     "synopsis": "string",
     "otherNames": "string",
-    "totalEpisodes": integer,
+    "totalEpisodes": "integer",
     "episodesList": [
         {
             "episodeId": "string",

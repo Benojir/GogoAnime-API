@@ -3,9 +3,17 @@
 
 This is an unofficial GogoAnime API. It just scrapes GogoAnime and fetch the data from GoggoAnime and presents as JSON format.
 
-<a href="?tab=readme-ov-file#installation">Installation</a>
-<a href="?tab=readme-ov-file#usage">Usage</a>
+<a href="#installation">Installation</a>
+
+<a href="#usage">Usage</a>
 - <a href="#get-recent-anime">Get Recent Anime</a>
+- <a href="#get-popular-anime">Get Popular Anime</a>
+- <a href="#get-movies">Get Anime Movies</a>
+- <a href="#get-new-season-anime">Get New Season Anime</a>
+- <a href="#search-anime">Search Anime</a>
+- <a href="#get-anime-by-genre">Get Anime By Genres</a>
+- <a href="#get-anime-details">Get Anime Details</a>
+- <a href="#get-streaming-link">Get Episodes Streaming Links</a>
 
 ## Installation:
 - Just clone this repository in your server's public_html directory.

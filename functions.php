@@ -20,7 +20,7 @@ function getHtmlFromUrl($url) {
     
     if ($content === FALSE) {
         // Handle the error
-        die("Error fetching the content.");
+        sendErrorResponse("Error fetching the content.");
     } else {
         // Output the content
         return $content;

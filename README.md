@@ -3,6 +3,10 @@
 
 This is an unofficial GogoAnime API. It just scrapes GogoAnime and fetch the data from GoggoAnime and presents as JSON format.
 
+<a href="?tab=readme-ov-file#installation">Installation</a>
+<a href="?tab=readme-ov-file#usage">Usage</a>
+- <a href="?tab=readme-ov-file#get-recent-anime">Get Recent Anime</a>
+
 ## Installation:
 - Just clone this repository in your server's public_html directory.
 
